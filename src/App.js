@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Section from './components/Section';
+import logoNetflix from './assets/img/logo-netflix.png';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <img src={logoNetflix} alt="logo-site" className="logo" />
+      </div>
+      <Section index="0" />
+      <Section index="1" />
+      <Section index="2" />
+      <Section index="3" />
+      <Section index="4" />
+      <Section index="5" />
     </div>
   );
-}
+};
 
 export default App;
